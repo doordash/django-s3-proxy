@@ -5,8 +5,10 @@ A Django app for linking static apps hosted on Amazon S3 to URLs in a standard D
 
 With ``django-s3-proxy``, you can use a subdirectory on your domain like ``doordash.com/my-app`` to access a Static Website hosted in an Amazon S3 bucket by forwarding resource requests to their corresponding file in S3.
 
+Inspiration from [django-proxy](https://github.com/mjumbewu/django-proxy) by [@mjumbewu](https://github.com/mjumbewu)
+
 ## About
-At DoorDash, many of our internal apps are written as single page Angular apps. Our main site is built using the Django framework, and our static assets are automatically uploaded and hosted on S3 using the great [Boto](https://github.com/boto/boto) and [django-storages](http://django-storages.readthedocs.org/en/latest/) extensions. 
+At DoorDash, many of our internal apps are written as single page Angular apps. Our main site is built using the Django framework, and our static assets are automatically uploaded and hosted on S3 using the great [Boto](https://github.com/boto/boto) and [django-storages](http://django-storages.readthedocs.org/en/latest/) extensions.
 
 For ease of development, these internal apps are hosted in their own Amazon S3 bucket independent of our Django app, and often have their own repository. We find this approach has a number of benefits:
 
