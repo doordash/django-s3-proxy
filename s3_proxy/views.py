@@ -49,7 +49,7 @@ class S3ProxyView(object):
   def as_view(self, index='index.html'):
     index_url = urlparse.urljoin(self.url, index)
 
-    def _view(self, request, url, args=None):
+    def _view(request, url, args=None):
       if url:
         # we only need to create a proxy response if the endpoint requested is
         # not the index document. just return a redirect to the asset, as browsers
