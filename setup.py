@@ -12,7 +12,7 @@ setup(
   description='Link static apps hosted on Amazon S3 to URLs in a Django project. ',
   author='DoorDash',
   author_email='hello@doordash.com',
-  packages=['django_s3_proxy'],
+  packages=['s3_proxy'],
   install_requires=['requests'],
   classifiers=[
     "Development Status :: 4 - Beta",
