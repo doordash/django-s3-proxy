@@ -7,7 +7,7 @@ import s3_proxy
 setup(
   name='django-s3-proxy',
   version='.'.join(map(str, s3_proxy.__version__)),
-  url='https://github.com/chillbear/django-s3-proxy',
+  url='https://github.com/doordash/django-s3-proxy',
   license='MIT',
   description='Link static apps hosted on Amazon S3 to URLs in a Django project. ',
   author='DoorDash',
